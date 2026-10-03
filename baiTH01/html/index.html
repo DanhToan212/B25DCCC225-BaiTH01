@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container navbar">
+        <a href="#home" class="brand"><span>HELLO</span></a>
+
+        <nav id="navLinks" class="nav-links" aria-label="Main navigation">
+          <a href="#home">Trang chủ</a>
+          <a href="#about">Giới thiệu</a>
+          <a href="#skills">Kỹ năng</a>
+          <a href="#projects">Dự án</a>
+          <a href="#contact">Liên hệ</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button id="themeToggle" class="theme-toggle" aria-label="Chuyển sang chế độ tối">🌙</button>
+          <button id="menuToggle" class="menu-toggle" aria-label="Mở menu">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="container hero-inner">
+          <div class="reveal">
+            <span class="greeting">Xin chào, mình là</span>
+            <h1>Nguyễn Danh Toàn </h1>
+            <p>
+              Mình là một lập trình viên web trẻ, yêu thích xây dựng giao diện đẹp, dễ dùng và tối ưu trải nghiệm người dùng trên mọi thiết bị.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">Xem dự án</a>
+              <a href="#contact" class="btn btn-secondary">Liên hệ</a>
+            </div>
+
+            <div class="hero-meta">
+              <div>
+                <strong>2+</strong>
+                Năm kinh nghiệm
+              </div>
+              <div>
+                <strong>12+</strong>
+                Dự án hoàn thành
+              </div>
+              <div>
+                <strong>100%</strong>
+                Đam mê công việc
+              </div>
+            </div>
+          </div>
+
+          <div class="profile-card reveal">
+            <img src="../images/01.jpg" alt="Ảnh đại diện" />
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p>Giới thiệu</p>
+            <h2>Về bản thân</h2>
+          </div>
+
+          <div class="about-grid">
+            <div class="info-card reveal">
+              <h3>Thông tin cá nhân</h3>
+              <ul class="info-list">
+                <li><span>Họ tên</span> <strong>Nguyễn Danh Toàn</strong></li>
+                <li><span>Ngày sinh</span> <strong>02/12/2007</strong></li>
+                <li><span>Địa chỉ</span> <strong>Hà Nội, Việt Nam</strong></li>
+                <li><span>Email</span> <strong>toan.dev@email.com</strong></li>
+              </ul>
+            </div>
+
+            <div class="info-card reveal">
+              <h3>Mục tiêu nghề nghiệp</h3>
+              <p>
+                Mình muốn trở thành frontend developer chuyên nghiệp, tập trung vào việc tạo ra các sản phẩm web hiện đại, thân thiện với người dùng và tối ưu trên nhiều thiết bị.
+              </p>
+              <p>
+                Mình luôn học hỏi những công nghệ mới để nâng cao kỹ năng và đóng góp tốt hơn cho các dự án thực tế.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p>Kỹ năng</p>
+            <h2>Những gì mình làm tốt</h2>
+          </div>
+
+          <div class="skills-grid">
+            <article class="skill-card reveal">
+              <div class="skill-icon">HTML</div>
+              <h3>HTML5</h3>
+              <p>Biết cách xây dựng cấu trúc trang web chuẩn, rõ ràng và thân thiện với SEO.</p>
+            </article>
+
+            <article class="skill-card reveal">
+              <div class="skill-icon">CSS</div>
+              <h3>CSS3</h3>
+              <p>Thiết kế giao diện hiện đại, responsive, sử dụng Flexbox và Grid hiệu quả.</p>
+            </article>
+
+            <article class="skill-card reveal">
+              <div class="skill-icon">JS</div>
+              <h3>JavaScript</h3>
+              <p>Xử lý tương tác người dùng, form validation, dark mode và hiệu ứng animation.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p>Dự án</p>
+            <h2>Một vài dự án tiêu biểu</h2>
+          </div>
+
+          <div class="project-filters">
+            <div class="form-group">
+              <label for="projectSearch">Tìm theo từ khóa</label>
+              <input id="projectSearch" type="search" placeholder="Tên, mô tả hoặc công nghệ..." />
+            </div>
+            <div class="form-group">
+              <label for="projectTagFilter">Lọc theo tag</label>
+              <select id="projectTagFilter">
+                <option value="">Tất cả tag</option>
+              </select>
+            </div>
+          </div>
+          <p id="projectResults" class="project-results" aria-live="polite"></p>
+
+          <div class="projects-grid">
+            <article class="project-card reveal">
+              <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80" alt="Project 1" />
+              <h3>Landing Page</h3>
+              <p>Thiết kế landing page cho thương hiệu cá nhân với layout đẹp, rõ ràng và dễ nhìn.</p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JS</span>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=900&q=80" alt="Project 2" />
+              <h3>Portfolio Website</h3>
+              <p>Trang web portfolio cá nhân giúp giới thiệu kỹ năng, dự án và thông tin liên hệ.</p>
+              <div class="project-tags">
+                <span>Responsive</span>
+                <span>UX/UI</span>
+                <span>Animation</span>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=900&q=80" alt="Giao diện ứng dụng quản lý công việc" />
+              <h3>Ứng dụng quản lý công việc</h3>
+              <p>Ứng dụng giúp tạo, theo dõi và hoàn thành công việc hằng ngày với giao diện trực quan.</p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p>Liên hệ</p>
+            <h2>Hãy kết nối với mình</h2>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-card reveal">
+              <form id="contactForm" novalidate>
+                <div class="form-group">
+                  <label for="name">Họ tên</label>
+                  <input id="name" name="name" type="text" placeholder="Nhập họ tên của bạn" />
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" placeholder="Nhập email" />
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Tin nhắn</label>
+                  <textarea id="message" name="message" placeholder="Viết tin nhắn cho mình..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Gửi tin nhắn</button>
+                <p id="formStatus" class="form-status" aria-live="polite"></p>
+              </form>
+            </div>
+
+            <div class="contact-card reveal">
+              <div class="contact-links">
+                <div class="contact-item">
+                  <div class="icon">📍</div>
+                  <div>
+                    <strong>Địa chỉ</strong><br />
+                    Hà Nội, Việt Nam
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="icon">📧</div>
+                  <div>
+                    <strong>Email</strong><br />
+                    toan.dev@email.com
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="icon">📞</div>
+                  <div>
+                    <strong>Số điện thoại</strong><br />
+                    0123 456 789
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">© 2026 MinhDev. All rights reserved.</div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>
